@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Model;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Admin extends Model
+
+class Login extends Model
 {
-    protected $table = "";
-    protected $primaryKey = "";
+    protected $table = "login";
+    protected $primaryKey = "uid";
     public $timestamps = false;
     protected $guarded = [];
 }

@@ -18,3 +18,9 @@ Route::get('/', function () {
 Route::get('/index',function(){
    echo 123;
 });
+
+Route::get('/register','Admin\RegisterController@register');
+Route::post('/registerdo','Admin\RegisterController@registerdo');
+Route::get('/login/login','Admin\LoginController@login');
+Route::post('/logindo','Admin\LoginController@logindo');
+
